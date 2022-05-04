@@ -110,12 +110,13 @@ class _ViewState extends State<View> {
 
   // https://medium.com/geekculture/loading-new-fonts-in-flutter-app-after-deployment-ttf-otf-ffe9c13ffcd1
   Future<ByteData> fetchFont({required String fontname}) async {
-    final http.Response response = await http.get(Uri.parse("./data/font.ttf"));
+    final http.Response response =
+        await http.get(Uri.parse("./public/data/font.ttf"));
     return ByteData.view(response.bodyBytes.buffer);
   }
 
   Future<List<List<dynamic>>> dataLoader({required String dataname}) async {
-    http.Response res = await http.get(Uri.parse("./data/data.csv"));
+    http.Response res = await http.get(Uri.parse("./public/data/data.csv"));
     List<List<dynamic>> csvResult =
         resultToCsv(convert.utf8.decode(res.bodyBytes));
     csvResult.removeAt(0);
@@ -123,7 +124,7 @@ class _ViewState extends State<View> {
   }
 
   Future<Map<String, dynamic>> settingLoader() async {
-    http.Response res = await http.get(Uri.parse("./data/setting.json"));
+    http.Response res = await http.get(Uri.parse("./public/data/setting.json"));
     return convert.jsonDecode(convert.utf8.decode(res.bodyBytes));
   }
 

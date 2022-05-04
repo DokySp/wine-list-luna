@@ -50700,7 +50700,7 @@ Us(a){var s=0,r=A.a5(t.yp),q,p
 var $async$og=A.a6(function(b,c){if(b===1)return A.a2(c,r)
 while(true)switch(s){case 0:p=A
 s=3
-return A.Z(A.a2O(A.D1("./data/font.ttf")),$async$og)
+return A.Z(A.a2O(A.D1("./public/data/font.ttf")),$async$og)
 case 3:q=p.hI(c.x.buffer,0,null)
 s=1
 break
@@ -50711,7 +50711,7 @@ TB(a){var s=0,r=A.a5(t.iN),q,p,o,n
 var $async$nZ=A.a6(function(b,c){if(b===1)return A.a2(c,r)
 while(true)switch(s){case 0:n=B.C
 s=3
-return A.Z(A.a2O(A.D1("./data/data.csv")),$async$nZ)
+return A.Z(A.a2O(A.D1("./public/data/data.csv")),$async$nZ)
 case 3:p=n.cC(0,c.x)
 o=A.ahV(A.a([p],t.yH),!0,null,",",'"','"',"\r\n",!0,!0).Tc(p,t.z)
 B.b.h2(o,0)
@@ -50725,7 +50725,7 @@ var $async$mH=A.a6(function(a,b){if(a===1)return A.a2(b,r)
 while(true)switch(s){case 0:p=B.ak
 o=B.C
 s=3
-return A.Z(A.a2O(A.D1("./data/setting.json")),$async$mH)
+return A.Z(A.a2O(A.D1("./public/data/setting.json")),$async$mH)
 case 3:q=p.BX(0,o.cC(0,b.x),null)
 s=1
 break
